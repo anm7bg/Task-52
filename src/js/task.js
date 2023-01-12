@@ -10,12 +10,12 @@ window.addEventListener("DOMContentLoaded", () => {
 
     const length = 5;
     // let count = 0;
-    for (let index = 0; index < length; index++) {
+    for (let index = 1; index <= length; index++) {
       let element = document.createElement("article");
       document.body.appendChild(element);
       let text = "This is article";
       element.classList.add("message")
-      element.innerHTML = text + index + 1;
+      element.innerHTML = text + index;
    
     }
 
