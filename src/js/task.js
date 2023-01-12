@@ -16,6 +16,7 @@ window.addEventListener("DOMContentLoaded", () => {
       let text = "This is article";
       element.classList.add("message")
       element.innerHTML = text + index + 1;
+   
     }
 
   });
