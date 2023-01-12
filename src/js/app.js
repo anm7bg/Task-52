@@ -1,5 +1,4 @@
 import "../scss/app.scss";
-
 window.addEventListener("DOMContentLoaded", () => {
   // This block will be executed once the page is loaded and ready
 
@@ -8,3 +7,8 @@ window.addEventListener("DOMContentLoaded", () => {
     alert("💣");
   });
 });
+
+// function yourMessage()
+// {
+//     alert("Your first function!");
+// }
