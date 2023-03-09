@@ -1,25 +1,34 @@
 import "../scss/app.scss";
-// window.addEventListener("DOMContentLoaded", () => {
-//   // This block will be executed once the page is loaded and ready
+window.addEventListener("DOMContentLoaded", () => {
+  // This block will be executed once the page is loaded and ready
 
-//   const button = document.querySelector(".button");
-//   button.addEventListener("click", () => {
-//     alert("💣");
-//   });
+  const button = document.querySelector(".button");
+  button.addEventListener("click", () => {
+    alert("💣");
+  });
 
-//   document.body.addEventListener("click", () => {
+  const main =  document.querySelector(".main");
 
-//     const length = 5;
-//     let count = 0;
-//     for (let index = 0; index < length; index++) {
-//       let element = document.createElement("article.mesage");
-//       document.body.appendChild(element);
-//       let text = "This is article";
-//       element.innerHTML = text + count + 1;
-//     }
+  document.body.addEventListener("click", () => {
 
-//   });
+    for (let index = 0; index < 5; index++) {
+     
+        let article = document.createElement("article");
 
-// });
+        let text = " This is article ";
+        
+        article.classList.add("message");
+        
+        article.innerText = text + (index+1);
+        
+        main.appendChild(article);
+
+        console.log("click")
+      
+    };
+
+  });
+
+});
 
 
