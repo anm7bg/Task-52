@@ -6,6 +6,8 @@ window.addEventListener("DOMContentLoaded", () => {
     alert("💣");
   });
 
+  console.log("Work");
+
   document.body.addEventListener("click", () => {
 
     const length = 5;
@@ -13,7 +15,7 @@ window.addEventListener("DOMContentLoaded", () => {
     for (let index = 1; index <= length; index++) {
       let element = document.createElement("article");
       document.body.appendChild(element);
-      let text = "This is article";
+      let text = "This is article ";
       element.classList.add("message")
       element.innerHTML = text + index;
    
