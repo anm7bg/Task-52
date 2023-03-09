@@ -6,9 +6,29 @@ window.addEventListener("DOMContentLoaded", () => {
   button.addEventListener("click", () => {
     alert("💣");
   });
+
+  const main =  document.querySelector(".main");
+
+  document.body.addEventListener("click", () => {
+
+    for (let index = 0; index < 5; index++) {
+     
+        let article = document.createElement("article");
+
+        let text = " This is article ";
+        
+        article.classList.add("message");
+        
+        article.innerText = text + (index+1);
+        
+        main.appendChild(article);
+
+        console.log("click")
+      
+    };
+
+  });
+
 });
 
-// function yourMessage()
-// {
-//     alert("Your first function!");
-// }
+
